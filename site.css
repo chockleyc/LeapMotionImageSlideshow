@@ -1,0 +1,61 @@
+html {
+}
+body {
+  background-color: #000000;
+  width: 1100px;
+  height: 800px;
+}
+#main {
+  position: absolute;
+  top: 150px;
+  left: 150px;
+  width: 800px;
+  height: 600px;
+  background-color: #777777;
+  background-image: url("http://gbcpolaris.org/wp-content/uploads/Placeholder-800x600.png");
+}
+.buttons {
+  width: 800px;
+}
+.button {
+  position: absolute;
+  top: 25px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  background-color: #777700;
+  float: left;
+}
+#zoom-btn {
+  left: 200px;
+}
+#paint-btn {
+  left: 400px;
+}
+#button-3 {
+  left: 600px;
+}
+#button-4 {
+  left: 800px;
+}
+.arrow {
+  width: 100px;
+  height: 200px;
+}
+.arrow .box {
+  width: 60px;
+  height: 80px;
+  background-color: yellow;
+}
+.arrow .triangle {
+  width: 0px;
+  height: 0px;
+  border-top: 80px solid transparent;
+  border-bottom: 80px solid transparent;
+}
+.arrow #left-arrow-tri {
+  border-right: 80px solid yellow;
+}
+.arrow #right-arrow-tri {
+  border-left: 80px solid yellow;
+}
