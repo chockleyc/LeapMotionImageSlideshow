@@ -1,35 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="./site.css">
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="./jquery.transit.min.js"></script>
+	<script src="./jquery.slides.min.js"></script>
     <script src="./site.js"></script>
+	<script type="text/javascript">
+	  $(function() {
+	    $("#main").slidesjs({
+		  width: 800,
+		  height: 600,
+		  navigation: false,
+		  pagination: false
+		});
+		
+	  });
+	</script>
   </head>
   <body>
-    <div class="container buttons">
-      <div class="button" id="zoom-btn">
+    <div class="container" id="wrapper">
+      <div class="container buttons">
+        <div class="button" id="zoom-btn">
+        </div>
+        <div class="button" id="paint-btn">
+        </div>
+        <div class="button" id="button-3">
+        </div>
+        <div class="button" id="button-4">
+        </div>
       </div>
-      <div class="button" id="paint-btn">
+      <div class="container box" id="main">
+        <img src="./images/one.jpg">
+	    <img src="./images/two.jpg">
+	    <img src="./images/three.jpg">
+	    <img src="./images/four.jpg">
+	    <img src="./images/five.jpg">
+	    <img src="./images/six.jpg">
+	    <img src="./images/seven.jpg">
+	    <img src="./images/eight.jpg">
+		<a href="#" class="slidesjs-next slidesjs-navigation right"><img src="./images/right-arrow.png"></a>
+	    <a href="#" class="slidesjs-previous slidesjs-navigation left"><img src="./images/left-arrow.png"></a>
       </div>
-      <div class="button" id="button-3">
-      </div>
-      <div class="button" id="button-4">
-      </div>
-    </div>
-    <div class="arrow" id="left-arrow">
-      <div class="box" id="left-arrow-box">
-      </div>
-      <div class="triangle" id="left-arrow-tri">
-      </div>
-    </div>
-    <div class="arrow" id="right-arrow">
-      <div class="box" id="right-arrow-box">
-      </div>
-      <div class="triangle" id="right-arrow-tri">
-      </div>
-    </div>
-    <div class="container box" id="main">
-
-    </div>
+	</div>
   </body>
 </html>
